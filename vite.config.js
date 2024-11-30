@@ -7,4 +7,17 @@ export default defineConfig({
     react(),
     Pages(),
   ],
+  resolve: {
+    alias: {
+      util: "util/",
+      process: "process/browser",
+    },
+  },
+  define: {
+    global: "window",
+    process: {
+      env: {},
+    },
+  },
+  
 });
